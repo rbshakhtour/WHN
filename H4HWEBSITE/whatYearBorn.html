@@ -40,5 +40,17 @@
               font-size: 0;
             }
           </style>
-          
+          <body>
+          <form action="stateWhich.html" method="get">
+          <label for="years">Select your birth year:</label>
+          <select id="years" name="years">
+            <script>
+              for (var i = 2023; i >= 1900; i--) {
+                document.write('<option value="' + i + '">' + i + '</option>');
+              }
+            </script>
+          </select>
+          <button type="submit">Next</button>
+        </form>
+      </body>
 </html>
